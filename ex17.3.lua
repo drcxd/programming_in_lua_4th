@@ -1,0 +1,5 @@
+-- If the file really exists, then it will be loaded no matter whatever module
+-- is required. It can be used as the default module and placed as the last
+-- element of the search path. Although it would not return the user-intended
+-- module, it always returns something. From my perspective, I cannot see any
+-- practical value.

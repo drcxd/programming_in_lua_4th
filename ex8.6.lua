@@ -1,0 +1,1 @@
+-- label L1 is not visible to the anonymous function contains the goto statement

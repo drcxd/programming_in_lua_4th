@@ -1,0 +1,6 @@
+-- If "change the current directory of your Lua script" means
+-- (1) change the working directory of the Lua script
+---    No. os.execute starts a new process to execute the command.
+-- (2) change the locating directory of the Lua script
+--     Yes. The script is loaded into memory when the script starts,
+--     after that it is free to be moved around.

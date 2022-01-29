@@ -1,0 +1,17 @@
+
+1. Global variables could work, but when the number of stations grows it can
+easily pollute the global name space and extra care has to be taken to avoid name
+conflicting. Generally speaking, it becomes harder to maintain when the number
+of stations grows.
+
+2. Table mapping is good enough for static mapping. It does not create name
+conflicts in the global name space. However, when the URL is generated from the
+name of the station procedurally, table mapping may contain some duplicated
+strings which could waste a lot of memory.
+
+3. Function mapping is good for generating URL according to the stations' code
+names. However, if there are multiple rules, it might requires multiple if-else
+branches.
+
+My personal choice will be to combine the table mapping and function
+mapping. This will be flexible enough to deal with different situations.

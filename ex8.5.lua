@@ -1,0 +1,3 @@
+-- When you jump out of a function, you have to pop the stack to pretend the
+-- function exiting normally. However, this process involves resetting the IP
+-- register, which actually defeat the purpose of doing a jump.
